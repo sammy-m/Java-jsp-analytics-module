@@ -14,7 +14,7 @@ if(session.getAttribute("firstname") == null){
 	response.setHeader("Cache-control", "no-cache,no-store,must-revalidate");
 }
 
-%>
+%> 
 
 <h2>${message1 }</h2>
 <h2>${message }</h2>
