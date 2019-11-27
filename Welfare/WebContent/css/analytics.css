@@ -1,0 +1,169 @@
+body{
+  /*display: flex;*/
+  background-color: #ba382f !important;
+
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.mycontainer{
+    background-color: #ba382f !important;
+background: linear-gradient(to left, rgba(30, 40, 56, 1),#ba382f) !important;
+}
+.mycontainer .nav{
+  float: left;
+  width: 15%;
+  border-radius: 0 10px 10px 0;
+  position: fixed;
+  min-height: 100vh;
+  background-color: rgba(30, 40, 56, 1);
+  padding-top: 50px;
+}
+.nav .logoa{
+
+/*  display: block;*/
+  width: 100% !important;
+  padding-bottom: 0 !important;
+  height: 250px; !important;
+  margin-bottom: 0px;
+}
+.nav .logoa img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-bottom: 0 !important;
+}
+.nav .logo{
+/*  display: block;*/
+  width: 100% !important;
+  padding-bottom: 0 !important;
+  height: auto;
+}
+
+.nav .logo img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	background-color: red;
+	margin-bottom: 0 !important;
+}
+.nav .container{
+
+margin: 0 !important;
+padding: 0 !important;
+border-radius: 0 10px 10px 0;
+
+}
+.nav .container ul{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+.container ul li{
+  height: 30px;
+  border-bottom: solid grey 1px;
+  margin: 0 !important;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+.container ul li:hover{
+  background-color: rgba(116, 118, 164, 0.5);
+}
+.container ul li:hover a{
+  color: #fff;
+}
+.container ul li[id="first"]{
+  border-top: solid grey 1px;
+}
+.container ul a{
+  text-decoration: none;
+  align-self: center;
+  color: #ba382f;
+
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.social span{
+  margin: 10px;
+}
+.twitter{
+  background: rgba(255, 0, 0, 0);
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+.twitter:hover{
+  border-radius: 50%;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(250,247,246,1) 0%, rgba(255,255,255,1) 0%, rgba(186,56,47,1) 100%);
+}
+.insta:hover{
+  border-radius: 52%;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(250,247,246,1) 0%, rgba(255,255,255,1) 0%, rgba(186,56,47,1) 100%);
+}
+.copy p{
+text-align: center;
+  color: white;
+}
+.mycontainer .main{
+  float: right;
+  width: 85%;
+  min-height: 100vh;
+  background: linear-gradient(to left, rgba(30, 40, 56, 0.8),#ba382f) !important;
+  padding: 0 10px 0 10px;
+}
+.main h1{
+  text-align: center;
+  font-size: 12pt;
+
+}
+.current-figures{
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+.figure-box{
+  border-right: solid grey 2px;
+  max-height: 200px;
+  min-width: 25%;
+  text-align: center;
+}
+.figure-box .running-number{
+  font-size: 20pt;
+  font-weight: 600;
+}
+.figure-box #small-title{
+  display: block;
+}
+.figure-box #small-title::after{
+  display: block;
+}
+.dept-case-month{
+  min-height: 400px;
+  background-color: whitesmoke;
+  display: block;
+  margin-bottom: 20px;
+}
+.case-reports{
+/*  background-color: yellow;*/
+  margin: 0 0 20px 0 !important;
+}
+.case-reports .case{
+  min-height: 200px;
+  padding: 10px !important;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.canvasjs-chart-credit{
+	display: none !important;
+}
+

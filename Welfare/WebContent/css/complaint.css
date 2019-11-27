@@ -1,0 +1,221 @@
+* {
+  outline:none;
+	border:none;
+	margin:0px;
+	padding:0px;
+	font-family:Courier, monospace;
+}
+body {
+	background:linear-gradient(to left,#8942a8,#ba382f);;        
+}
+nav{
+    width:100%;
+    height: 55px;
+    background:linear-gradient(to left,#8942a8,#ba382f);
+    display:flex;
+    justify-content:space-between;
+    
+}
+nav p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    line-height: 45px;
+    color: #fff;
+    float: left;
+    padding: 0px 20px;
+}
+nav ul{
+    float: left;
+    margin-right:1%;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 22px 14px;
+    text-decoration: none;
+       
+}
+nav ul li a:hover{
+    font-size: 16px;
+    color: #222;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 4px 4px 4px 4px;
+    
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a {
+    padding: 8px 14px;
+}
+nav ul li ul li  {
+    width: 150px;
+
+}
+nav ul li ul li:hover {
+   background-color: aliceblue;
+}
+#paper {
+	color:#FFF;
+	font-size:20px;
+}
+#margin {
+	margin-left:12px;
+	margin-bottom:20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+}
+#text {
+	width:500px;
+	overflow:hidden;
+	background-color:#FFF;
+	color:#222;
+	font-family:Courier, monospace;
+	font-weight:normal;
+	font-size:24px;
+	resize:none;
+	line-height:40px;
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:45px;
+	padding-bottom:34px;
+	background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+	background-repeat:repeat-y, repeat;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	-webkit-box-shadow: 0px 2px 14px #000;
+	box-shadow: 0px 2px 14px #000;
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #FFF;
+}
+#title {
+	background-color:transparent;
+	border-bottom:3px solid #FFF;
+	color:#FFF;
+	font-size:20px;
+	font-family:Courier, monospace;
+	height:28px;
+	font-weight:bold;
+	width:220px;
+}
+#button {
+	cursor:pointer;
+	margin-top:20px;
+	float:right;
+	height:40px;
+	padding-left:24px;
+	padding-right:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #000000;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border-top:1px solid #FFF;
+	-webkit-box-shadow: 0px 2px 14px #000;
+	box-shadow: 0px 2px 14px #000;
+	background-color: #62add6;
+	background-image:url(https://static.tumblr.com/maopbtg/ZHLmgtok7/button.png);
+	background-repeat:repeat-x;
+}
+#button:active {
+	zoom: 1;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+#button:focus {
+	zoom: 1;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+#wrapper {
+	width:700px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:24px;
+	margin-bottom:100px;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 0px -1px 0px #000000;
+  font-weight:bold;
+	font-size:20px;
+  
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  
+  -webkit-box-shadow: 0px 2px 14px #000;
+  border-radius:12px ;
+  margin-bottom:4%;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
